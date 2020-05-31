@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>SwoopRP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/8e8e482c13.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="inc/styling/css/index.css" type="text/css">
+    </head>
+    <body>
+        <div id="swoop" class="w3-display-container">
+            <div class="w3-card-4 w3-container w3-white container w3-margin w3-display-right">
+                <div class="header">
+                    <div class="w3-half w3-padding-24 w3-display-container tab activeTab" id="identityTab">
+                        <i class="far fa-address-card w3-display-middle" id="tabHeaderIcon1"></i>
+                        <i class="fas fa-child w3-display-middle" id="tabHeaderIcon2"></i>
+                    </div>
+                    <div class="w3-quarter w3-padding-24 w3-display-container tab" id="nextTab">
+                        <i class="fas fa-angle-double-right w3-display-middle" id="tabIcon1"></i>
+                        <i class="fas fa-angle-double-left w3-display-middle" id="tabIcon2"></i>
+                    </div>
+                    <div class="w3-quarter w3-padding-24 w3-display-container tab" id="progressTab">
+                        <i class="fas fa-times w3-display-middle" id="notFinishedIcon"></i>
+                        <i class="fas fa-check w3-display-middle" id="finishedIcon"></i>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                
+                <div class="content w3-margin" id="identityContent">
+                    <div class="w3-card-2">
+                        <form class="w3-container">
+                            <label class="w3-text-teal"><b>Fornavn</b></label>
+                            <input class="w3-input w3-border w3-border-teal" type="text" id="fNameInput">
+                             
+                            <label class="w3-text-teal"><b>Efternavn</b></label>
+                            <input class="w3-input w3-border w3-border-teal" type="text" id="lNameInput">
+                            <div class="w3-padding-16"></div>
+                        </form>
+                    </div>
+                    <div class="w3-card-2">
+                        <div class="w3-row">
+                            <div class="w3-container w3-half">
+                                <p><input class="w3-radio" type="radio" name="gender" value="male" id="genderMale" checked>
+                                <label>Mand</label></p>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <p><input class="w3-radio" type="radio" name="gender" value="female" id="genderFemale">
+                                <label>Dame</label></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="w3-card-2">
+                        <div class="row">
+                            <div class="w3-container">
+                                <input type="range" min="15" max="80" value="15" class="slider" id="ageRange">
+                                <p>Alder: <span id="ageView">15</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+    
+                <div class="content w3-margin" id="characterContent">
+                    <div class="w3-card-2 maxContainer">
+                        <div class="spacer"></div>
+                        <div id="characterContentDump">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="inc/styling/js/index.js"></script>
+        <script src="inc/styling/js/handling.js"></script>
+    </body>
+</html>
